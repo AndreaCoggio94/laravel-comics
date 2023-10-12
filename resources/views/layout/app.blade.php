@@ -11,7 +11,7 @@
   
 </head>
 
-<body>
+<body class="body">
 
     <header>
         @include('partials.header')
@@ -37,7 +37,9 @@
             </div>
           </div> --}}
     </main>
-    <footer></footer>
+    <footer>
+        @include('partials.footer')
+    </footer>
     
   
 </body>

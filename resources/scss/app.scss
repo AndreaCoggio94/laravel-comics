@@ -1,1 +1,195 @@
 @import "~bootstrap/scss/bootstrap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// General
+
+.body {
+    background-color: black;
+}
+
+// header
+
+.navbar {
+    background-color: white;
+    font-size: 0.8rem;
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        height: 7rem;
+
+        .active {
+            color: #0282f9;
+        }
+        .col-2 {
+            display: flex;
+
+            img {
+                width: 5rem;
+                aspect-ratio: 1;
+            }
+        }
+        div.d-flex {
+            justify-content: space-around;
+        }
+    }
+}
+
+// main
+
+// jumbotron
+
+.jumbotron {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0) 300px,
+            rgb(0, 0, 0) 300px
+        ),
+        url("/public/jumbotron.jpg");
+    padding-top: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        display: flex;
+        flex-direction: column;
+        .btn-blue {
+            color: white;
+            background-color: #0282f9;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0 auto 0 0;
+        }
+        .btn-blue.btn {
+            align-self: center;
+            margin: auto;
+            margin-bottom: 1rem;
+            border-radius: 0;
+        }
+        .d-flex {
+            flex-wrap: wrap;
+            padding: 1rem 0.25rem;
+            justify-content: space-around;
+            color: white;
+        }
+    }
+}
+
+// cards
+
+.comic-card {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0.25rem;
+    text-align: center;
+    font-size: 0.6rem;
+    .text {
+        margin-top: 0.25rem;
+    }
+    .image {
+        height: 140px;
+        aspect-ratio: 1;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+// buy section
+
+.buy {
+    background-color: #0282f9;
+    color: white;
+    .container {
+        padding: 2rem 0;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        div.d-flex {
+            align-items: center;
+            justify-content: space-around;
+            img {
+                width: 2.5rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+// footer
+
+.top-footer {
+    color: white;
+    background-image: url("/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        .links {
+            max-height: 400px;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            padding: 1rem 0;
+
+            h1 {
+                font-size: 1rem;
+                padding-bottom: 1rem;
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    font-size: 0.8rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+
+        .logo {
+            overflow: hidden;
+            max-height: 350px;
+            align-items: center;
+            justify-content: flex-end;
+
+            img {
+                width: 80%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+}
+
+.bottom-footer {
+    background-color: #303030;
+    color: white;
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        .signUp-button {
+            border: 2px solid #0282f9;
+            padding: 0.5rem;
+        }
+        div.d-flex {
+            justify-content: space-around;
+            align-items: center;
+
+            h2 {
+                font-size: 1.5rem;
+                padding-right: 0.5rem;
+                color: #0282f9;
+            }
+            img {
+                padding: 0 0.5rem;
+                height: 2rem;
+            }
+        }
+    }
+}
