@@ -28,14 +28,12 @@
             </div>
           </div>
         
-          {{-- <div class="buy">
+          <div class="buy">
             <div class="container d-flex">
-              <div class="d-flex" v-for="(item, index) in buyCards" :key="index">
-                <img :src="item.img" alt="" />
-                <span class="text-uppercase"> {{ item.title }} </span>
-              </div>
+                @yield('buy')
+              
             </div>
-          </div> --}}
+          </div>
     </main>
     <footer>
         @include('partials.footer')

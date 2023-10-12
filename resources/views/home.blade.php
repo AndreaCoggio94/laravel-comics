@@ -10,3 +10,12 @@
   </div>
   @endforeach
 @endsection
+
+@section('buy')
+@foreach($buyCards as $card)
+<div class="d-flex" >
+    <img src="{{ $card['img'] }}" alt="" />
+    <span class="text-uppercase"> {{ $card['title'] }} </span>
+  </div>
+  @endforeach
+@endsection
