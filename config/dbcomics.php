@@ -112,18 +112,5 @@ return [
         "sale_date" => "2019-04-10",
         "type" => "graphic novel",
     ]
-    ],
-    'webPages' => [
-       
-           "characters",
-         "comics", 
-         "movies", 
-         "tv",
-         "games", 
-         "collectibles", 
-         "videos", 
-         "fans", 
-         "news", 
-         "shop"
-      ],
+    ]
 ];
