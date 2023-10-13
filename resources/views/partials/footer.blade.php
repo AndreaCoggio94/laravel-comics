@@ -57,7 +57,8 @@
         </ul>
       </div>
       <div class="logo d-flex">
-        <img src="/img/dc-logo-bg.png" alt="" />
+        <img src="{{ Vite::asset('public/dc-logo-bg.png')}}" alt="logo-bg.png" />
+        
       </div>
     </div>
   </div>
@@ -66,11 +67,16 @@
       <div class="signUp-button">SIGN-UP NOW!</div>
       <div class="col-5 d-flex links">
         <h2>FOLLOW US</h2>
-        <img src="/footer-facebook.png" alt="" />
-        <img src="/public/footer-twitter.png" alt="" />
-        <img src="/footer-youtube.png" alt="" />
-        <img src="/footer-pinterest.png" alt="" />
-        <img src="/footer-periscope.png" alt="" />
+        <img src="{{ Vite::asset('public/footer-facebook.png')}}" alt="" />
+        
+        <img src="{{ Vite::asset('public/footer-twitter.png')}}" alt="" />
+        
+        <img src="{{ Vite::asset('public/footer-youtube.png')}}" alt="" />
+       
+        <img src="{{ Vite::asset('public/footer-pinterest.png')}}" alt="" />
+        
+        <img src="{{ Vite::asset('public//footer-periscope.png')}}" alt="" />
+       
       </div>
     </div>
   </footer>

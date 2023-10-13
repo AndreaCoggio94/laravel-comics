@@ -14,7 +14,7 @@
 @section('buy')
 @foreach($buyCards as $card)
 <div class="d-flex" >
-    <img src="{{ $card['img'] }}" alt="" />
+    <img src="{{ Vite::asset($card['img']) }}" alt="" />
     <span class="text-uppercase"> {{ $card['title'] }} </span>
   </div>
   @endforeach
