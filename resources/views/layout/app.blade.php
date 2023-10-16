@@ -6,7 +6,7 @@
 <head>
     @include('partials.head')
 
-  <title>Laravel</title>
+  <title>{{ env('APP_NAME') }} - @yield('title') </title>
 
   
 </head>

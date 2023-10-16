@@ -1,5 +1,10 @@
 @extends('layout.app')
 
+
+@section('title')
+Home
+@endsection
+
 @section('cards')
 @foreach($comics as $comic)
 <div class="comic-card">
